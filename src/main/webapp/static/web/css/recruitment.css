@@ -1,0 +1,95 @@
+.int-banner {
+  position: relative;
+}
+.int-banner .recruitment-contact {
+  position: absolute;
+  z-index: 16;
+  right: 24%;
+  bottom: 10px;
+  overflow: hidden;
+}
+.int-banner .recruitment-contact p {
+  float: left;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 52px;
+}
+.recruitment-content {
+  padding-bottom: 330px;
+  border-top: 1px solid transparent;
+  width: 954px;
+  margin: 0 auto;
+}
+.recruitment-content .attention {
+  border-top: 1px solid #cecece;
+  padding-top: 60px;
+}
+.recruitment-content .attention .attention-item {
+  padding-bottom: 45px;
+}
+.recruitment-content .attention .attention-title {
+  color: #333;
+  font-size: 36px;
+  height: 36px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+.recruitment-content .attention .attention-title img {
+  width: 32px;
+  height: 32px;
+  vertical-align: bottom;
+  margin-bottom: 2px;
+  margin-right: 14px;
+}
+.recruitment-content .attention .attention-content {
+  padding-left: 75px;
+}
+.recruitment-content .attention .attention-content p {
+  color: #999;
+  font-size: 24px;
+  line-height: 54px;
+  text-indent: -1em;
+  padding-left: 24px;
+}
+.recruitment-content .everyDetail-box {
+  padding-bottom: 22px;
+}
+.recruitment-content .everyDetail {
+  margin-top: 64px;
+}
+.recruitment-content .everyDetail .everyDetail-title {
+  color: #333;
+  font-size: 36px;
+  height: 36px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+.recruitment-content .everyDetail .everyDetail-title img {
+  width: 32px;
+  height: 32px;
+  vertical-align: bottom;
+  margin-right: 14px;
+  margin-bottom: 2px;
+}
+.recruitment-content .everyDetail-content {
+  margin-left: 62px;
+  margin-bottom: 23px;
+}
+.recruitment-content .everyDetail-content .requirement-title {
+  margin: 0px 0 15px 0;
+  color: #666;
+  font-size: 24px;
+  height: 27px;
+  line-height: 27px;
+  border-left: 6px solid #e6271b;
+  padding-left: 8px;
+}
+.recruitment-content .everyDetail-content .requirement-content {
+  margin-left: 38px;
+}
+.recruitment-content .everyDetail-content .requirement-content p {
+  color: #999;
+  font-size: 24px;
+  line-height: 54px;
+  text-indent: -1em;
+}

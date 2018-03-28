@@ -1,0 +1,42 @@
+.business-section {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 78px 0 130px 140px;
+}
+.business-section li {
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+.business-section li .business-section-imgBox {
+  float: left;
+  width: 435px;
+  height: 271px;
+}
+.business-section li .business-section-imgBox img {
+  width: 435px;
+  height: 271px;
+  vertical-align: bottom;
+}
+.business-section li .business-section-text {
+  float: left;
+  width: 280px;
+  height: 271px;
+  position: relative;
+  margin-left: 64px;
+}
+.business-section li .business-section-text div {
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 20%;
+}
+.business-section li .business-section-text div h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 14px;
+}
+.business-section li .business-section-text div p {
+  font-size: 20px;
+  color: #999;
+  line-height: 36px;
+}

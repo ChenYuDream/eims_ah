@@ -1,0 +1,147 @@
+/*--安华动态和安华案例公用部分--*/
+.case-section-slider-box {
+  float: left;
+  width: 566px;
+}
+.case-section-slider-box .case-section-slider {
+  width: 566px;
+  height: 388px;
+  position: relative;
+  overflow: hidden;
+}
+.case-section-slider-box .case-section-slider .case-slider-imgs {
+  height: 388px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.case-section-slider-box .case-section-slider .case-slider-imgs li {
+  float: left;
+  width: 566px;
+  height: 388px;
+}
+.case-section-slider-box .case-section-slider .case-slider-imgs li img {
+  width: 566px;
+  height: 388px;
+  vertical-align: bottom;
+}
+.case-section-slider-box .case-section-slider .caseLeft {
+  width: 35px;
+  height: 35px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 176px;
+  left: 24px;
+  z-index: 10;
+  display: none;
+}
+.case-section-slider-box .case-section-slider .caseRight {
+  width: 35px;
+  height: 35px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 176px;
+  right: 24px;
+  z-index: 10;
+  display: none;
+}
+.case-section-slider-box .case-section-slider .case-slider-index {
+  margin-left: -70px;
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  left: 50%;
+}
+.case-section-slider-box .case-section-slider .case-slider-index .select {
+  background: #e6271b;
+}
+.case-section-slider-box .case-section-slider .case-slider-index li {
+  float: left;
+  width: 24px;
+  height: 5px;
+  margin-right: 10px;
+  background: #fff;
+}
+.case-section-slider-box .case-section-slider-text {
+  margin-top: 32px;
+  width: 100%;
+}
+.case-section-slider-box .case-section-slider-text h1 {
+  width: 100%;
+  color: #333;
+  font-size: 24px;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.case-section-slider-box .case-section-slider-text p {
+  width: 100%;
+  font-size: 18px;
+  line-height: 22px;
+  color: #999;
+  text-indent: 2em;
+  margin-top: 22px;
+}
+/*--结束--*/
+.case-section {
+  width: 1020px;
+  margin: 66px auto 0;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+.case-section .case-detail-box {
+  margin-left: 40px;
+  float: left;
+  width: 410px;
+  min-height: 90px;
+}
+.case-section .case-detail-box .case-detail li {
+  width: 410px;
+  height: 92px;
+  background: #efeff5;
+  line-height: 92px;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.case-section .case-detail-box .case-detail li.liSel {
+  width: 436px;
+  background: #333;
+  right: 26px;
+}
+.case-section .case-detail-box .case-detail li.liSel span {
+  margin: 0 20px 0 43px;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #fff;
+}
+.case-section .case-detail-box .case-detail li.liSel a {
+  color: #fff;
+}
+.case-section .case-detail-box .case-detail li.liSel a:hover {
+  color: #fff;
+}
+.case-section .case-detail-box .case-detail li p {
+  color: #999;
+  font-size: 26px;
+}
+.case-section .case-detail-box .case-detail li p span {
+  border: 6px solid transparent;
+  border-top: 6px solid #999;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 14px 0 94px;
+}
+.case-section .case-detail-box .case-detail li p a {
+  color: #999;
+}
+.case-section .case-detail-box .case-detail li p a:hover {
+  color: #333;
+}

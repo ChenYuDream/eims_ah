@@ -1,0 +1,160 @@
+
+.border-radius(@radius){
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+/*--安华动态和安华案例公用部分--*/
+.case-section-slider-box{
+  float:left;
+  width:566px;
+  .case-section-slider{
+    width:566px;
+    height:388px;
+    position:relative;
+    overflow:hidden;
+    .case-slider-imgs{
+      height:388px;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:1;
+      li{
+        float:left;
+        width:566px;
+        height:388px;
+        img{
+          width:566px;
+          height:388px;
+          vertical-align: bottom;
+        }
+      }
+    }
+    .caseLeft{
+      width:35px;
+      height:35px;
+      .border-radius(50%);
+      position:absolute;
+      top:176px;
+      left:24px;
+      z-index:10;
+      display: none;
+    }
+    .caseRight{
+      width:35px;
+      height:35px;
+      .border-radius(50%);
+      position:absolute;
+      top:176px;
+      right:24px;
+      z-index:10;
+      display:none;
+    }
+    .case-slider-index{
+      margin-left:-70px;
+      position:absolute;
+      z-index:10;
+      bottom:10px;
+      left:50%;
+      //-webkit-transform: translateX(-50%);
+      //-moz-transform: translateX(-50%);
+      //-ms-transform: translateX(-50%);
+      //-o-transform: translateX(-50%);
+      //transform: translateX(-50%);
+
+      .select{
+        background:#e6271b;
+      }
+      li{
+        float:left;
+        width:24px;
+        height:5px;
+        margin-right:10px;
+        background:#fff;
+      }
+    }
+  }
+  .case-section-slider-text{
+    margin-top:32px;
+    width:100%;
+    h1{
+      width:100%;
+      color:#333;
+      font-size:24px;
+      height:24px;
+      line-height:24px;
+      white-space: nowrap;
+      overflow: hidden;
+      -ms-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+    }
+    p{
+      width:100%;
+      font-size:18px;
+      line-height:22px;
+      color:#999;
+      text-indent: 2em;
+      margin-top:22px;
+    }
+  }
+}
+/*--结束--*/
+
+.case-section{
+  width:1020px;
+  margin:66px auto 0;
+  padding-bottom:100px;
+  overflow: hidden;
+
+  .case-detail-box{
+    margin-left:40px;
+    float:left;
+    width:410px;
+    min-height: 90px;
+    .case-detail{
+      li{
+        width:410px;
+        height:92px;
+        background:#efeff5;
+        line-height:92px;
+        position:relative;
+        top:0;
+        right:0;
+        &.liSel{
+          width:436px;
+          background:#333;
+          right:26px;
+          span{
+            margin:0 20px 0 43px;
+            border-top:6px solid transparent;
+            border-right:6px solid #fff;
+          }
+          a{
+            color:#fff;
+            &:hover{
+              color:#fff;
+            }
+          }
+        }
+        p{
+          color:#999;
+          font-size:26px;
+          span{
+            border:6px solid transparent;
+            border-top:6px solid #999;
+            display: inline-block;
+            vertical-align: middle;
+            margin:0 14px 0 94px;
+          }
+          a{
+            color:#999;
+            &:hover{
+              color:#333;
+            }
+          }
+        }
+      }
+    }
+  }
+}

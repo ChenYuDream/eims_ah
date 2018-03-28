@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.jypj.dev.dao.NewsDao">
+
+    <resultMap id="BaseResultMap" type="org.jypj.dev.model.News">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="title" property="title" jdbcType="VARCHAR"/>
+        <result column="sub_content" property="subContent" jdbcType="VARCHAR"/>
+        <result column="content_text" property="contentText" jdbcType="VARCHAR"/>
+        <result column="show_imgs" property="showImgs" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+        <result column="content_type" property="contentType" jdbcType="VARCHAR"/>
+        <result column="sort_order" property="sortOrder" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,title,sub_content,content_text,show_imgs,create_time,update_time,content_type,sort_order
+    </sql>
+
+    <insert id="saveNews" parameterType="org.jypj.dev.model.News">
+        insert into ah_news (
+        title,
+        sub_content,
+        content_text,
+        show_imgs,
+        create_time,
+        update_time,
+        content_type,
+         sort_order
+        )
+        values (
+        #{title,jdbcType=VARCHAR},
+        #{subContent,jdbcType=VARCHAR},
+        #{contentText,jdbcType=VARCHAR},
+        #{showImgs,jdbcType=VARCHAR},
+        #{createTime,jdbcType=TIMESTAMP},
+        #{updateTime,jdbcType=TIMESTAMP},
+        #{contentType,jdbcType=VARCHAR},
+        #{sortOrder,jdbcType=INTEGER}
+        )
+    </insert>
+
+    <delete id="deleteNewsById" parameterType="java.lang.String">
+        delete from ah_news
+        where ID = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <update id="updateNews" parameterType="org.jypj.dev.model.News">
+        update ah_news
+        <set>
+            id=#{id,jdbcType=INTEGER},
+            title=#{title,jdbcType=VARCHAR},
+            sub_content=#{subContent,jdbcType=VARCHAR},
+            content_text=#{contentText,jdbcType=VARCHAR},
+            show_imgs=#{showImgs,jdbcType=VARCHAR},
+            update_time=#{updateTime,jdbcType=TIMESTAMP},
+            content_type=#{contentType,jdbcType=VARCHAR},
+            sort_order=#{sortOrder,jdbcType=INTEGER}
+        </set>
+        where ID = #{id,jdbcType=INTEGER}
+    </update>
+
+    <select id="selectNewsById" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select
+        <include refid="Base_Column_List"/>
+        from ah_news
+        where ID = #{id,jdbcType=INTEGER}
+    </select>
+
+    <select id="selectAllByContentType" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from ah_news
+        where 1=1
+        <if test="contentType != null and contentType !='' ">
+            and content_type=#{contentType,jdbcType=VARCHAR}
+        </if>
+        order by sort_order
+    </select>
+
+    <select id="selectLimitByContentType" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from ah_news
+        where 1=1
+        <if test="contentType != null and contentType !='' ">
+            and content_type=#{contentType,jdbcType=VARCHAR}
+        </if>
+        order by create_time desc,id
+        limit 20
+    </select>
+
+    <select id="selectOnePageByContentType" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from ah_news
+        where 1=1
+        <if test="contentType != null and contentType !='' ">
+            and content_type=#{contentType,jdbcType=VARCHAR}
+        </if>
+        order by create_time desc,id
+    </select>
+
+
+</mapper>

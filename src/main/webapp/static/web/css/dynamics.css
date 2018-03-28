@@ -1,0 +1,79 @@
+.white-space {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.dy-section {
+  width: 1020px;
+  margin: 66px auto 100px;
+  overflow: hidden;
+}
+.dy-section .dy-detail-box {
+  float: left;
+  width: 426px;
+  height: 460px;
+  background: yellow;
+  margin-left: 24px;
+  overflow-y: scroll;
+}
+.dy-section .dy-detail-box .dy-detail li {
+  width: 100%;
+  height: 92px;
+  background: #fff;
+  padding-left: 14px;
+  padding-top: 22px;
+  border-left: 14px solid transparent;
+}
+.dy-section .dy-detail-box .dy-detail li.liSelect {
+  background: #333;
+  border-left: 14px solid #e6271b;
+}
+.dy-section .dy-detail-box .dy-detail li.liSelect .dy-detail-title h1 a {
+  color: #fff;
+}
+.dy-section .dy-detail-box .dy-detail li.liSelect .dy-detail-title h3 {
+  color: #fff;
+}
+.dy-section .dy-detail-box .dy-detail li.liSelect p {
+  color: #fff;
+}
+.dy-section .dy-detail-box .dy-detail li .dy-detail-title {
+  width: 100%;
+  height: 22px;
+  position: relative;
+}
+.dy-section .dy-detail-box .dy-detail li .dy-detail-title h1 {
+  width: 270px;
+  height: 22px;
+  line-height: 22px;
+  color: #333;
+  font-size: 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.dy-section .dy-detail-box .dy-detail li .dy-detail-title h1 a {
+  color: #333;
+}
+.dy-section .dy-detail-box .dy-detail li .dy-detail-title h3 {
+  color: #333;
+  font-size: 14px;
+  position: absolute;
+  right: 24px;
+  bottom: 0;
+}
+.dy-section .dy-detail-box .dy-detail li p {
+  width: 100%;
+  height: 16px;
+  line-height: 16px;
+  color: #999;
+  font-size: 16px;
+  margin-top: 10px;
+  padding-right: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}

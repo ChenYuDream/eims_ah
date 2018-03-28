@@ -1,0 +1,64 @@
+.banner .qualification-aside {
+  padding-left: 60px;
+  width: 1000px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -500px;
+  top: 15%;
+  z-index: 12;
+}
+.banner .qualification-aside p {
+  font-size: 44px;
+  line-height: 44px;
+  height: 44px;
+}
+.banner .qualification-aside p span {
+  font-size: 16px;
+}
+.banner .qualification-aside h3 {
+  font-size: 22px;
+  height: 22px;
+  line-height: 22px;
+  margin-top: 8px;
+}
+.banner .qualification-aside .int-line {
+  width: 98px;
+  height: 4px;
+  background: #e6271b;
+  margin-top: 32px;
+}
+.qualification-section {
+  padding-top: 54px;
+  padding-bottom: 154px;
+  width: 960px;
+  margin: 0 auto;
+}
+.qualification-section .upUl {
+  overflow: hidden;
+}
+.qualification-section .upUl li {
+  margin-right: 42px;
+  margin-bottom: 62px;
+}
+.qualification-section .downUl {
+  overflow: hidden;
+  padding-left: 60px;
+  margin-top: 18px;
+}
+.qualification-section .downUl li {
+  margin-right: 106px;
+}
+.qualification-section .downUl li:last-child {
+  margin-right: 0;
+}
+.qualification-section li {
+  width: 197px;
+  height: 251px;
+  float: left;
+}
+.qualification-section li img {
+  width: 197px;
+  height: 251px;
+  vertical-align: bottom;
+}
